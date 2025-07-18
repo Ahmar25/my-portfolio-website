@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 80px 20px;
+}
+
+.hero.no-image {
+  flex-direction: column;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #00ffe7;
+}
+
+.hero-text h2 {
+  font-size: 1.8rem;
+  color: #ccc;
+}
+
+.hero-text h3 {
+  font-size: 1.5rem;
+  color: #aaa;
+}
+
+.hero-text span {
+  color: #00ffe7;
+}
+
+.hero-text p {
+  max-width: 600px;
+  margin: 20px 0;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.btn {
+  background: #00ffe7;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 20px #00ffe7;
+}
+.about {
+  padding: 80px 20px;
+  border-top: 1px solid #222;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #00ffe7;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.about-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.about-icons span {
+  background: #1f1f1f;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #00ffe7;
+  font-size: 0.9rem;
+  border: 1px solid #00ffe7;
+  box-shadow: 0 0 8px rgba(0, 255, 231, 0.2);
+}
+
+.skills {
+  padding: 80px 20px;
+  border-top: 1px solid #222;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  color: #00ffe7;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill {
+  margin-bottom: 25px;
+}
+
+.skill label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.bar {
+  background: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 15px;
+  border: 1px solid #00ffe7;
+}
+
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffe7, #00c6ff);
+  width: 0;
+  animation: fillBar 1.5s ease-out forwards;
+  box-shadow: 0 0 10px #00ffe7;
+}
+
+@keyframes fillBar {
+  to {
+    width: var(--target-width);
+  }
+}
+.projects {
+  padding: 80px 20px;
+  border-top: 1px solid #222;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  color: #00ffe7;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #1b1b1b;
+  border: 1px solid #00ffe7;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(0, 255, 231, 0.1);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 255, 231, 0.2);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #00ffe7;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin: 15px 0;
+}
+
+.tech-stack {
+  margin-bottom: 15px;
+}
+
+.tech-stack span {
+  display: inline-block;
+  background: #101010;
+  border: 1px solid #00ffe7;
+  color: #00ffe7;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.project-card a {
+  color: #00ffe7;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #00ffe7;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  color: #ccc;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  background: #00ffe7;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 15px #00ffe7;
+  transition: transform 0.2s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+}
